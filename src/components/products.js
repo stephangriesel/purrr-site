@@ -16,6 +16,7 @@ const PRODUCTS_QUERY = graphql`
                     name
                   }
                   price
+                  image
                 }
               }
             } 

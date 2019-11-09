@@ -5,7 +5,7 @@ import Products from "../components/products"
 const IndexPage = () => {
   return (
     <Layout>
-      <div>
+      <div className="product-display">
         <Products />
       </div>
     </Layout>
