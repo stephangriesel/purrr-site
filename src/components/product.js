@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
+import '../css/product.css';
 
 const Product = ({ skus, product }) => {
     const stripe = window.Stripe("pk_test_uxVeps2FOxzKRvcPqBMCOftw00gMGfkch3")
@@ -18,15 +19,17 @@ const Product = ({ skus, product }) => {
         })
     }
     return (
-        <article>
-            <img src="https://picsum.photos/200/300" alt="Shirt" />
-            <h3>{product.name}</h3>
-            <select value={sku} onChange={(e) => setSku(e.target.value)}>
-                {skus.map(edge => <option key={edge.node.id} value={edge.node.id}>{edge.node.attributes.name}</option>)}
+        <div className="product-display">
+            <article>
+                <img src="https://picsum.photos/200/300" alt="Shirt" />
+                <h3>{product.name}</h3>
+                <select value={sku} onChange={(e) => setSku(e.target.value)}>
+                    {skus.map(edge => <option key={edge.node.id} value={edge.node.id}>{edge.node.attributes.name}</option>)}
 
-            </select>
-            <button onClick={placeOrder}>Buy</button>
-        </article>
+                </select>
+                <button onClick={placeOrder}>Buy</button>
+            </article>
+        </div>
     )
 }
 
