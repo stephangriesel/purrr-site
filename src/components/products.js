@@ -40,11 +40,16 @@ const Products = () => {
           const skus = allStripeSku.edges.filter(
             sku => sku.node.product.id === product.node.id
           )
+          // const image = allStripeSku.edges.map(product => {
+          //   img => img.node.image === product.node.image
+          // })
           return (
             <Product
               key={product.node.id}
               skus={skus}
-              product={product.node} />
+              product={product.node}
+            // image={image}
+            />
           )
         })
         return
