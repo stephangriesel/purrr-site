@@ -41,12 +41,12 @@ const Products = () => {
           const skus = allStripeSku.edges.filter(
             sku => sku.node.product.id === product.node.id
           )
-          console.log(skus);
+          // console.log(skus);
           const images = skus.filter(
             sku => sku.node.image
           )
           const image = images.length > 0 ? images[0].node.image : "";
-          console.log(image);
+          // console.log(image);
           return (
             <Product
               key={product.node.id}
