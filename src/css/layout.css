@@ -10,4 +10,20 @@ html {
   display: flex;
   margin: 2rem;
 }
+
+button {
+  background: #43c3f6;
+  text-transform: uppercase;
+  border: none;
+  padding: 1em 2em;
+  margin: 0.5em;
+  font-weight: 900;
+  font-size: 1em;
+  color: #fff;
+}
+
+select {
+  background: #8aaab6;
+  border: none;
+}
 /*# sourceMappingURL=layout.css.map */
