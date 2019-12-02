@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import '../css/product.css';
 
 const Product = ({ skus, product, image }) => {
-    const stripe = window.Stripe("add_key")
+    const stripe = window.Stripe("pk_test_uxVeps2FOxzKRvcPqBMCOftw00gMGfkch3") // always use public key here
+    // debugger
 
     const [sku, setSku] = useState(skus[0].node.id);
 
