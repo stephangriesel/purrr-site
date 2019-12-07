@@ -36,4 +36,16 @@ select {
   background: #8aaab6;
   border: none;
 }
+
+@media only screen and (max-width: 670px) {
+  .product-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=layout.css.map */
